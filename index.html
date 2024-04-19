@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodistan - A taste of India</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.dribbble.com/users/4913590/screenshots/15283932/media/b430f8df20aa4f1cc96e412c68db44d2.jpg" alt="Foodistan Logo">
+            <h1>Foodistan</h1>
+        </div>
+        <nav>
+            <button onclick="showHomePage()">Home</button>
+            <button onclick="showMenuPage()">Menu</button>
+            <button onclick="showAboutPage()">About</button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="home-page">
+            <img src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/restaurant%2F649660%Frestaurant020220816105121.jpg" alt="Foodistan Restaurant">
+            <h2>Welcome to Foodistan!</h2>
+            <p>Experience the vibrant flavors of India with our authentic and delicious recipes.</p>
+        </section>
+
+        <section id="menu-page" style="display: none;">
+            <h2>Our Menu</h2>
+            <div class="recipe-card">
+                <img src="https://littlesunnykitchen.com/wp-content/uploads/Chicke-tikka-masala-2-7.jpg" alt="Butter Chicken">
+                <h3>Butter Chicken</h3>
+                <p>Tender chicken pieces cooked in a creamy tomato gravy with aromatic spices.</p>
+                <p>Price: $12.99</p>
+                <button onclick="showIngredients('butter-chicken')">Ingredients</button>
+                <button onclick="orderFood('butter-chicken')">Order Now</button>
+            </div>
+            <div class="recipe-card">
+                <img src="https://minimalistbaker.com/wp-content/uploads/2018/10/Vegan-Palak-Paneer-SQUARE.jpg" alt="Palak Paneer">
+                <h3>Palak Paneer</h3>
+                <p>Cottage cheese cubes simmered in a rich spinach gravy with hints of ginger and garlic.</p>
+                <p>Price: $10.99</p>
+                <button onclick="showIngredients('palak-paneer')">Ingredients</button>
+                <button onclick="orderFood('palak-paneer')">Order Now</button>
+            </div>
+            <div class="recipe-card">
+                <img src="https://assets.limetray.com/assets/user_images/menus/compressed/1636789829_Tandoorichickennew.jpg" alt="Biryani">
+                <h3>Biryani</h3>
+                <p>Aromatic basmati rice layered with flavorful meat, vegetables, and fragrant spices.</p>
+                <p>Price: $15.99</p>
+                <button onclick="showIngredients('biryani')">Ingredients</button>
+                <button onclick="orderFood('biryani')">Order Now</button>
+            </div>
+            <div class="recipe-card">
+                <img src="https://thumbs.dreamstime.com/b/chole-bhature-dark-background-served-laccha-onions-pickle-buttermilk-restaurant-style-304060489.jpg" alt="Chole Bhature">
+                <h3>Chole Bhature</h3>
+                <p>Spicy chickpea curry served with fluffy fried flatbreads.</p>
+                <p>Price: $8.99</p>
+                <button onclick="showIngredients('chole-bhature')">Ingredients</button>
+                <button onclick="orderFood
